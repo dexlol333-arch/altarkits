@@ -1,0 +1,31 @@
+name: AltarKits
+main: com.altarkits.KitsPlugin
+version: 1.0.0
+api-version: '1.21'
+description: Altar kits GUI with cooldowns, rank kits, copper kits and kit bots.
+commands:
+  kits:
+    description: Open the kits menu
+    aliases: [kit, altarkits]
+  kitadmin:
+    description: Edit kits (needs kit.admin)
+    aliases: [kadmin]
+    permission: kit.admin
+  bot:
+    description: Spawn / remove kit bots (needs kit.admin)
+    permission: kit.admin
+permissions:
+  kit.admin:
+    description: Edit kits and spawn bots
+    default: op
+  kit.bypass.cooldown:
+    description: Ignore kit cooldowns
+    default: false
+  kit.rank.vip:
+    default: false
+  kit.rank.vipplus:
+    default: false
+  kit.rank.platinum:
+    default: false
+  kit.rank.elite:
+    default: false
