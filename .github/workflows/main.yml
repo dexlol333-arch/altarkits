@@ -21,11 +21,11 @@ jobs:
           cache: maven
 
       - name: Build with Maven
+        working-directory: AltarKits
         run: mvn -B package
 
       - name: Upload plugin jar
         uses: actions/upload-artifact@v4
         with:
           name: AltarKits
-          path: target/AltarKits-*.jar
-
+          path: AltarKits/target/AltarKits-*.jar
